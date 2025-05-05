@@ -1,0 +1,334 @@
+/*Estilos CSS INDEX.HTML*/
+ *, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dceaf0;
+    font-family: "Lexend Peta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+   
+
+}
+header {
+    background: rgb(16, 55, 19);
+    background: radial-gradient(circle, rgba(16, 55, 19, 1) 0%, #2e8b57 74%);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+}
+nav{
+    width: 100%;
+}
+a {
+    padding: 20px;
+}
+main {
+    display: grid;
+    grid-template-columns:20% 40% 20% 20%;
+    grid-row: auto;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+main section img{
+    width: 90%;
+    height: auto;
+}
+.articulo-portada{
+padding:20px 0;
+}
+.grid{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+aside{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    border: thin solid #333;
+    border-radius: 20px;
+}
+aside h2{
+    background-color:#2e8b57;
+    color: white;
+    padding: 10px;
+    margin:0px;
+    border-radius: 20px 20px 0px 0px;
+}
+aside article img{
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+}
+aside article p{
+    width: 95%;
+}
+
+footer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    position: static;
+    bottom: 0px;
+    
+   
+}
+a:visited, a {
+    color: inherit;
+    text-decoration: none;
+}
+.menu:hover {
+    text-decoration: underline;
+    text-decoration-color: #2e8b57;
+    text-decoration-thickness: 5px;
+    margin-left: 10px;
+}
+#menuCheckbox {
+    display: none;
+}
+#menuLabel {
+    display: none;
+
+}
+#menu {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/*Pagina Politicas*/
+.politicas{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+    }
+.politicas h1,h3{
+    padding: 20px 0;
+}
+
+
+/*Estilos CSS Articulos*/
+
+ .body-articulos {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items:center; 
+    }
+  .main-articulos{
+    display: flex;
+    flex: 1;
+  }
+
+
+.cabecera-articulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    align-items: center;
+    width: 800px;
+}
+.cabecera-articulos p{
+width: 800px;
+text-align: center;
+font-weight: 700;
+color: #525151;
+}
+
+.container-articulo{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction:column;
+    align-items: center;
+    width: 70%;
+    
+}
+.container-articulo h1{
+    font-size: 3rem;
+
+}
+.articulo {
+    display: flex; 
+    justify-content: center; 
+    flex-direction:column; 
+    width: 80%;
+    padding: 10px;
+}
+.articulo h3{
+    padding: 20px 0px;
+}
+.img-articulo{
+    width: 650px;
+    height: auto;
+    padding: 10px 0;
+}
+.video{
+margin:25px auto;
+}
+/*SOBRE MI */
+.sobremi{
+    width: 70%;
+    height:auto;
+    margin: 30px auto;
+    text-align: center;
+}
+.sobremi img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle();
+    margin: 0 20px 20px;
+    object-fit: cover;
+}
+.sobremi p{
+        font-size: 18px;
+        line-height:1.6; 
+}
+
+/*CARRERAS*/
+.carreras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+
+}
+.carreras h1{
+    text-align: center;
+    padding: 20px 0;
+}
+.carreras p{
+    max-width: 80%;
+    text-align: center;
+    padding: 20px 0;
+}
+.carreras td,tr,th{
+   padding:10px; 
+   border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+@media (max-width: 600px) {
+/* PAGINA PRINCIPAL*/
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;;
+    }
+    #menuLabel {
+            display: inline-block;
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-left: 5px;;
+        }
+    #menu {
+        display: none;
+        width: 95%;
+        padding:0px;
+    }
+    #menuCheckbox:checked + #menuLabel + #menu {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+   
+    footer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        bottom: 0px;
+        
+        
+    }
+
+    /*ARTICULOS*/
+    .container-articulo{
+        width: 95%;
+    }
+    .articulo { 
+    width: 95%;
+    }
+    .container-articulo h1{
+        font-size: 2rem;
+        padding:10px 0;
+    }
+
+    .img-articulo{
+        width: 95%;
+        height: auto;
+    }
+    .cabecera-articulos{
+        width: 95%;
+        padding: 10px;
+    }
+    .cabecera-articulos p{
+        width: 95%;
+        text-align: center;
+        }
+    /*POLITICAS*/
+    .politicas{
+        width: 95%;
+        }
+    .politicas h1,h3{
+        padding: 20px 0;
+        margin:0 auto;
+    }
+
+    /*SOBRE MI*/
+    .sobremi img{
+        width: 100%;
+        height: auto;
+        margin: 15px auto;
+        border-radius: 0%;
+        }
+    
+    .sobremi{
+        width: 95%;
+        margin: 0 auto;
+        }
+        .sobremi{
+            width: 95%;
+            height:auto;
+            margin: 30px auto;
+            text-align: center;
+            shape-outside: none;
+            float: none;
+        }
+    .sobremi img{            
+        shape-outside: none;
+        float: none;
+   }
+}
